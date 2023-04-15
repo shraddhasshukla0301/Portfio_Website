@@ -1,0 +1,8 @@
+#contact{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 0.8fr;
+    grid-template-areas: "item-1"
+                          "item-2" 
+                            "item-3"
+                            "footer";
+}

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contain{
+    width: 100%;
+    background-color: rgb(6 10 34);
+}
+
+
+
+/* Home Section Css */
+.home{
+    height: 500px;
+    width: 100%;
+    background-color: yellow;   
+}
+.home img{
+    height: 650px;
+    width: 40%;
+    margin-left: 5vh;
+    margin-top: 5vh;
+}
+.home p{
+
+    margin: 12px 12px;
+}
+h1{
+    height: 219px;
+    color: white;
+    font-size: 5.5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+/* Design Section Css */
+#design{
+   height: 360px;
+   color: white;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+}
+#design h2{
+    font-size: 5rem;
+}
+
+
+
+/* Shop Section Css */
+#shop{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0.8rem;
+}
+.shopitem{
+    height: 293px;
+    width: 372px;
+    background-color: red;
+}
+@media screen and (max-width:1496px){
+    #shop{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:1149px){
+    #shop{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:760px){
+    #shop{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.belowshop{
+    height: 90px;
+    width: 100%;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+/* Contact Section Css */
+#contact{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 1fr 1.5fr;
+    grid-template-areas: "item-1  item-2"
+                            "item-3 item-3"
+                            "footer footer";
+}
+.sym{
+    height: 5rem;
+    width: 5rem;
+    margin: 1px 0px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+.item-1{
+    grid-area: item-1;
+    background-color: yellow;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    }
+.item-2{
+    grid-area: item-2;
+    background-color: yellow;
+}
+.item-3{
+    grid-area: item-3;
+    background-color: rgb(6 10 34);   
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.footer{
+    background-color: black;
+    color: white;
+    grid-area: footer;
+    display: grid;
+    justify-items: center;
+    align-items: center
+}
